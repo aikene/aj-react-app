@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import {React, Component} from "react";
 
-function App() {
+class AppA extends Component {
+  render() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>AJ's Sample App</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,6 +23,7 @@ function App() {
       </header>
     </div>
   );
+  }
 }
 
-export default App;
+export default AppA;
