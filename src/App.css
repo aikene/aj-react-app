@@ -23,7 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+/* Credit to https://github.com/arslanah99/dynamic-cards-reactbootstrap/blob/master/src/component/Box.css */
 .box1,
 .box2,
 .box3,

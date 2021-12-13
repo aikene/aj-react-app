@@ -28,6 +28,7 @@ class AppA extends Component {
   );
   }
   componentDidMount() {
+    // credit to https://pusher.com/tutorials/consume-restful-api-react/#project-setup
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then((data) => {
