@@ -5,12 +5,12 @@ const Contacts = ({ contacts }) => {
   return (
     <div className="grid">
         {contacts.map((contact) => (
-        <Card style={{ width: '18rem' }} className="box">
+        <Card style={{ width: '18rem' }} className="box" key={contact.id}>
           <Card.Body>
-            <Card.Title>{contact.name}</Card.Title>
-            <Card.Text>Email: {contact.email}</Card.Text>
-            <footer className="blockquote-footer">{contact.company.catchPhrase}</footer>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>{contact.first_name} {contact.last_name}</Card.Title>
+            <Card.Text>{contact.team.full_name}</Card.Text>
+            <footer>{contact.position}</footer>
+            <Button onClick={() => window.open("https://www.nba.com/players") } variant="primary">Head to NBA</Button>
           </Card.Body>
         </Card>
         ))}
