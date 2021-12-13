@@ -21,14 +21,14 @@ class AppA extends Component {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>AJ's Sample App 2</h1>
+        <h1>AJ's Sample NBA App</h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.balldontlie.io/#get-all-players"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Visualizing Data from balldontlie API
         </a>
       </header>
       <Contacts contacts={this.state.contacts} />
