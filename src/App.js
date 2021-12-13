@@ -3,6 +3,7 @@ import './App.css';
 import {React, Component} from "react";
 
 class AppA extends Component {
+  
   render() {
   return (
     <div className="App">
@@ -23,6 +24,15 @@ class AppA extends Component {
       </header>
     </div>
   );
+  }
+  componentDidMount() {
+    fetch('http://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then((data) => {
+      console.log(data)
+      this.setState({ contacts: data })
+    })
+    .catch(console.log)
   }
 }
 
