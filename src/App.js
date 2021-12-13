@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import {React, Component} from "react";
+import Contacts from './components/contacts';
 
 class AppA extends Component {
+  state = {
+    contacts: []
+  }
   
   render() {
   return (
@@ -10,9 +14,6 @@ class AppA extends Component {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>AJ's Sample App 2</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,6 +23,7 @@ class AppA extends Component {
           Learn React
         </a>
       </header>
+      <Contacts contacts={this.state.contacts} />
     </div>
   );
   }
